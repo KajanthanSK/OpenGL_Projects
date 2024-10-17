@@ -12,7 +12,11 @@ float vertices[] =
 	/* Position */		
 	-0.5f,-0.5f,0.0f,			
 	 0.5f,-0.5f,0.0f,			
-	 0.0f, 0.5f,0.0f,	
+	 0.5f, 0.5f,0.0f,	
+
+	 0.5f, 0.5f,0.0f,
+	 -0.5f, 0.5f,0.0f,
+	 -0.5f,-0.5f,0.0f,
 };
 
 int main()
@@ -63,7 +67,7 @@ int main()
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		glBindVertexArray(VAO);
-		glDrawArrays(GL_TRIANGLES, 0, 3);
+		glDrawArrays(GL_TRIANGLES, 0, 6);
 
 		glfwSwapBuffers(window);
 
